@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tu Peso en otro Planeta</title>
+<style>
+  background-color: Black;
+  
+</style>
+</head>
+<body>
+  <h1>Tu Peso en otro Planeta</>
+  <p>En La Tierra pesas distinto que en Marte o Júpiter</p>
+  
+  
+  
+  
+  
+  <scrypt>
+  var usuario = prompt("Cual Es Tu Peso?");
+  var planeta = parseInt(prompt("Elije tu planeta. 1 es Marte, 2 es Jupiter"));
+  var peso = parseInt(usuario);
+  var g_tierra = 9.8;
+  var g_marte = 3.7;
+  var g_jupiter = 24.8;
+  var peso_final;
+  if (planeta == 1)
+  {
+    peso_final = peso * g_marte / g_tierra;
+  }
+  else if(planeta == 2)
+  {
+    peso_final = peso * g_jupiter / g_tierra;
+  }
+  else
+  {
+   peso_final = "1000000";
+  }
+  
+  peso_final = parseInt(peso_final);
+  if (planeta == 1) 
+  {
+  document.write("Tu Peso en Marte es <strong>" + peso_final + " Kilos</strong>");
+  }
+  else if(planeta == 2)
+  {
+  document.write("Tu Peso en Júpiter es <strong>" + peso_final + " Kilos</strong>");
+  }
+  else 
+  {
+  document.write("Tu nivel de Taradez es de: <strong>" + peso_final + " Taradillos</strong>");
+  }
+  </scrypt>
+</body>
+</html>
